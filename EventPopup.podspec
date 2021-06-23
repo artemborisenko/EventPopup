@@ -2,13 +2,13 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '12.1'
+s.ios.deployment_target = '11.0'
 s.name = "EventPopup"
 s.summary = "EventPopup lets a user show an overlapping popup views"
 s.requires_arc = true
 
 # 2
-s.version = "0.0.4"
+s.version = "0.0.5"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
