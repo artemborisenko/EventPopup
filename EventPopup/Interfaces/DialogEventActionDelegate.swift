@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol DialogEventActionDelegate: AnyObject {
-    func didPressAction(action: Event.Action, eventInfo: [EventInfoKey: Any])
+    func didPressAction(action: Event.Action, eventInfo: [EventInfoKey: Any], tag: Int?)
 }

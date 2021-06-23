@@ -8,7 +8,7 @@ s.summary = "EventPopup lets a user show an overlapping popup views"
 s.requires_arc = true
 
 # 2
-s.version = "0.0.5"
+s.version = "0.0.6"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }

@@ -219,7 +219,7 @@ private extension DialogView {
     @objc func didPressButton(sender: UIButton) {
         if let actionIndex = actionButtonsStackView.arrangedSubviews.firstIndex(of: sender), let action = event?.actions[actionIndex] {
             dismiss()
-            actionDelegate?.didPressAction(action: action, eventInfo: event?.eventInfo ?? [:])
+            actionDelegate?.didPressAction(action: action, eventInfo: event?.eventInfo ?? [:], tag: event?.tag)
         }
     }
 }

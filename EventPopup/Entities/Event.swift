@@ -10,6 +10,10 @@ import Foundation
 public struct EventInfoKey: Hashable {
     var key: String
     
+    public init(key: String) {
+        self.key = key
+    }
+    
     public static let serviceId = EventInfoKey(key: "serviceId")
     public static let eventData = EventInfoKey(key: "eventData")
 }
@@ -64,12 +68,14 @@ public struct Event {
     let kind: Event.Kind
     var actions: [Event.Action]
     var eventInfo: [EventInfoKey: Any]
+    var tag: Int?
     
-    public init(title: String, message: String, kind: Event.Kind, actions: [Event.Action], eventInfo: [EventInfoKey: Any] = [:]) {
+    public init(title: String, message: String, kind: Event.Kind, actions: [Event.Action], eventInfo: [EventInfoKey: Any] = [:], tag: Int? = nil) {
         self.title = title
         self.message = message
         self.kind = kind
         self.actions = actions
         self.eventInfo = eventInfo
+        self.tag = tag
     }
 }
