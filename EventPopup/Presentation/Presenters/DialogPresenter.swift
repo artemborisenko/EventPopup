@@ -23,7 +23,7 @@ public final class DialogPresenter {
     }()
     
     /// Delegate object that responsible for handling actions pressed in dialog view
-    weak var dialogEventDelegate: DialogEventActionDelegate?
+    public weak var dialogEventDelegate: DialogEventActionDelegate?
     
     public init() {}
     
