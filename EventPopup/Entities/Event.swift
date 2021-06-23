@@ -51,5 +51,13 @@ public struct Event {
     var message: String
     let kind: Event.Kind
     var actions: [Event.Action]
-    var eventInfo: [EventInfoKey: Any] = [:]
+    var eventInfo: [EventInfoKey: Any]
+    
+    public init(title: String, message: String, kind: Event.Kind, actions: [Event.Action], eventInfo: [EventInfoKey: Any] = [:]) {
+        self.title = title
+        self.message = message
+        self.kind = kind
+        self.actions = actions
+        self.eventInfo = eventInfo
+    }
 }
