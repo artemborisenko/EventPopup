@@ -81,7 +81,7 @@ public final class DefaultDialogView: DialogView {
     public override func configure(with event: Event) {
         super.configure(with: event)
         
-        imageView.image = UIImage(named: event.kind.rawValue)
+        imageView.image = UIImage(named: event.kind.rawValue, in: Bundle(for: DefaultDialogView.self), compatibleWith: nil)
         titleLabel.text = event.title
         messageLabel.text = event.message
     }

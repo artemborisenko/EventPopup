@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F349E9775707736ADBB2795 /* Pods_EventPopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568C1254B86E92C2D8234285 /* Pods_EventPopup.framework */; };
 		C507244526834FCF00A51D47 /* EventPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = C507244326834FCF00A51D47 /* EventPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C51B036A26837DD2009ACB64 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C51B036C26837DD2009ACB64 /* Localizable.strings */; };
 		C547B1182683553E00924B84 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547B10C2683553D00924B84 /* Queue.swift */; };
 		C547B1192683553E00924B84 /* DialogEventActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547B10E2683553E00924B84 /* DialogEventActionDelegate.swift */; };
 		C547B11A2683553E00924B84 /* iQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547B10F2683553E00924B84 /* iQueue.swift */; };
@@ -26,6 +27,12 @@
 		C507244026834FCF00A51D47 /* EventPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C507244326834FCF00A51D47 /* EventPopup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventPopup.h; sourceTree = "<group>"; };
 		C507244426834FCF00A51D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C51B036B26837DD2009ACB64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C51B036D26837DD5009ACB64 /* be */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = be; path = be.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C51B036E26837DD7009ACB64 /* be-BY */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "be-BY"; path = "be-BY.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C51B036F26837DD8009ACB64 /* en_BY */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_BY; path = en_BY.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C51B037026837DD9009ACB64 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C51B037126837DDA009ACB64 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C547B10C2683553D00924B84 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		C547B10E2683553E00924B84 /* DialogEventActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogEventActionDelegate.swift; sourceTree = "<group>"; };
 		C547B10F2683553E00924B84 /* iQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iQueue.swift; sourceTree = "<group>"; };
@@ -151,6 +158,7 @@
 		C547B11F2683558100924B84 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C51B036C26837DD2009ACB64 /* Localizable.strings */,
 				C547B120268355C700924B84 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -209,6 +217,11 @@
 			knownRegions = (
 				en,
 				Base,
+				be,
+				"be-BY",
+				"ru-RU",
+				ru,
+				en_BY,
 			);
 			mainGroup = C507243626834FCF00A51D47;
 			productRefGroup = C507244126834FCF00A51D47 /* Products */;
@@ -226,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C547B121268355C700924B84 /* Assets.xcassets in Resources */,
+				C51B036A26837DD2009ACB64 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +286,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C51B036C26837DD2009ACB64 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C51B036B26837DD2009ACB64 /* en */,
+				C51B036D26837DD5009ACB64 /* be */,
+				C51B036E26837DD7009ACB64 /* be-BY */,
+				C51B036F26837DD8009ACB64 /* en_BY */,
+				C51B037026837DD9009ACB64 /* ru */,
+				C51B037126837DDA009ACB64 /* ru-RU */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C507244626834FCF00A51D47 /* Debug */ = {
@@ -414,7 +444,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.3;
+				MARKETING_VERSION = 0.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = artemborisenko.EventPopup;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -443,7 +473,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.3;
+				MARKETING_VERSION = 0.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = artemborisenko.EventPopup;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

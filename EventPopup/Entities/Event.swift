@@ -27,20 +27,32 @@ public struct Event {
         case confirm
         case cancel
         case next
+        case delete
+        case `continue`
+        case yes
+        case no
         case custom(title: String)
         
         var title: String {
             switch self {
             case .ok:
-                return "OK"
+                return NSLocalizedString("event.action.ok", tableName: nil, bundle: Bundle(for: DialogView.self), value: "", comment: "")
             case .close:
-                return "Close"
+                return NSLocalizedString("event.action.close", tableName: nil, bundle: Bundle(for: DialogView.self), value: "", comment: "")
             case .cancel:
-                return "Cancel"
+                return NSLocalizedString("event.action.cancel", tableName: nil, bundle: Bundle(for: DialogView.self), value: "", comment: "")
             case .confirm:
-                return "Confirm"
+                return NSLocalizedString("event.action.confirm", tableName: nil, bundle: Bundle(for: DialogView.self), value: "", comment: "")
             case .next:
-                return "Next"
+                return NSLocalizedString("event.action.next", tableName: nil, bundle: Bundle(for: DialogView.self), value: "", comment: "")
+            case .delete:
+                return NSLocalizedString("event.action.delete", tableName: nil, bundle: Bundle(for: DialogView.self), value: "", comment: "")
+            case .continue:
+                return NSLocalizedString("event.action.continue", tableName: nil, bundle: Bundle(for: DialogView.self), value: "", comment: "")
+            case .yes:
+                return NSLocalizedString("event.action.yes", tableName: nil, bundle: Bundle(for: DialogView.self), value: "", comment: "")
+            case .no:
+                return NSLocalizedString("event.action.no", tableName: nil, bundle: Bundle(for: DialogView.self), value: "", comment: "")
             case let .custom(title):
                 return title
             }

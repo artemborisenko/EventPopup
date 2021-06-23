@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  EventPopup
+
+  Created by Артём Борисенко on 23.06.21.
+  
+*/
+
+"event.action.ok" = "OK";
+"event.action.close" = "Close";
+"event.action.cancel" = "Cancel";
+"event.action.confirm" = "Confirm";
+"event.action.next" = "Next";
+"event.action.delete" = "Delete";
+"event.action.continue" = "Continue";
+"event.action.yes" = "Yes";
+"event.action.no" = "No";
